@@ -29,7 +29,7 @@ Note: the script has the next modifications:
 bash installer_hassio_supervised.sh 
 ```
 
-## Thorubleshoting
+## Throubleshoting
 
 Once installed the H.A. the service has a cli service to don things when the web interface doesn't works:
 
