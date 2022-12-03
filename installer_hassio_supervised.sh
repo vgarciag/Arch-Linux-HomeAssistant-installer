@@ -142,7 +142,7 @@ then
         info "Switching to cgroup v1"
         cp /etc/default/grub /etc/default/grub.bak
         sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT="/&systemd.unified_cgroup_hierarchy=false /' /etc/default/grub
-        update-grub
+        grub-mkconfig -o /boot/grub/grub.cfg
         touch /var/run/reboot-required
     fi
 elif [ -f /boot/cmdline.txt ]
