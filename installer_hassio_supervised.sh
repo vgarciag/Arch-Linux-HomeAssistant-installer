@@ -45,7 +45,7 @@ done
 PRIMARY_INTERFACE=$(ip route | awk '/^default/ { print $5; exit }')
 IP_ADDRESS=$(ip -4 addr show dev "${PRIMARY_INTERFACE}" | awk '/inet / { sub("/.*", "", $2); print $2 }')
 
-MACHINE="raspberrypi4-64"
+MACHINE="generic-x86-64"
 case ${ARCH} in
     "i386" | "i686")
         MACHINE=${MACHINE:=qemux86}
