@@ -6,7 +6,7 @@ Steps to Install Home Assistant into Rapsberry Pi 4 with Arch Linux
 
 - RaspPi4 with archlinux: https://archlinuxarm.org 
 - some SW:
-	curl, bash, docker-ce, dbus, apparmor, jq, systemd, os-agent To-Do
+	curl, bash, docker-ce, dbus, apparmor, jq, systemd, bluez, bluez-utils
 
 ## Installation
 
