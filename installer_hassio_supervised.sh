@@ -24,12 +24,13 @@ URL_APPARMOR_PROFILE="https://version.home-assistant.io/apparmor.txt"
 # info "Restarting NetworkManager"
 # systemctl restart "${SERVICE_NM}"
 
+# DISABLED in favor PiHole
 # Enable and start systemd-resolved
-if [ "$(systemctl is-active systemd-resolved)" = 'inactive' ]; then
-    info "Enable systemd-resolved"
-    systemctl enable systemd-resolved.service> /dev/null 2>&1;
-    systemctl start systemd-resolved.service> /dev/null 2>&1;
-fi
+# if [ "$(systemctl is-active systemd-resolved)" = 'inactive' ]; then
+#     info "Enable systemd-resolved"
+#     systemctl enable systemd-resolved.service> /dev/null 2>&1;
+#     systemctl start systemd-resolved.service> /dev/null 2>&1;
+# fi
 
 # Restart Docker service
 info "Restarting docker service"
